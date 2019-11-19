@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>首页</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    <script type="text/javascript">
+	       
+    </script>
+    <style>
+       .table{border:1px solid #ddd;width:850px;margin-top:5px;padding-top:10px;}
+	   .table td{height: 84px;border: 0px;}
+	   td span { width: 80px; height: 20px; overflow: hidden; display: inline-block; margin-top: 5px; margin-left: 5px;cursor: pointer;}
+	   td img { width: 34px; height: 36px;cursor: pointer;}
+	   td img.select{border:solid 5px #149bdf}
+	   .bread-title{width:1014px;min-height: 33px;}
+	   .bread-title img{display: none;cursor: pointer;width: 20px;height: 20px;margin-right: 5px;}
+	   .file-info{margin-right: 5px;margin-bottom: 5px;height: 22px; color: #3a87ad; background-color: #d9edf7; border-color: #bce8f1; display: inline-block; padding: 3px 8px; border-radius: 5px;cursor: pointer;}
+	   .file-info .close{font-size: 17px;margin-left: 5px;}
+	   .add-news {height: 30px;display:none;}
+	   .add-news span{display: inline-block;cursor: pointer;width: 50px;line-height: 25px; text-align: center; background-color: #006dcc; color: white;border-radius: 5px;}
+    </style>
+  </head>
+  <body>
+    <h1>Hello, world!</h1>
+    <div class="container">
+    	<div class="bread-title"><img _path="" src="img/huanyuan_hover-2x.png"/></div>
+    	<div class="add-news"><span onclick="javascript:addNews();">建稿</span></div>
+	   <table class="table"></table>
+    </div>
+    <div id="ShowImage_Form" class="modal hide">         
+         <div class="modal-header">
+             <button data-dismiss="modal" class="close" type="button"></button>
+         </div>
+         <div class="modal-body"><div id="img_show"></div></div>
+    </div>
+    
+    <script src="js/jquery.min.js"></script>
+<!--     <script src="js/jquery.fileDownload.min.js"></script> -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/comm.js"></script>
+    <script src="js/base.js"></script>
+  </body>
+</html>
